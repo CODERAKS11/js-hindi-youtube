@@ -25,14 +25,40 @@ const myArr2 = new Array(1, 2, 3, 4)
 
 
 // slice, splice
-
+//slice
+//Takes a portion of an array (or string)
+//Does NOT modify the original array
+//Returns a new array
+//array.slice(start, end)
+//start → index to begin (included)
+//end → index to stop (excluded)
 console.log("A ", myArr);
 
 const myn1 = myArr.slice(1, 3)
+//Negative index = count from end
+//let arr = [10, 20, 30, 40, 50];
+//console.log(arr.slice(-3)); // [30, 40, 50]
 
 console.log(myn1);
 console.log("B ", myArr);
+//❌ Remove elements example
+// let arr = [10, 20, 30, 40, 50];
+// let removed = arr.splice(1, 2);
+//array.splice(start, deleteCount, item1, item2, ...)
+// console.log(removed); // [20, 30]
+// console.log(arr);     // [10, 40, 50]
 
+// ➕ Add elements example
+// let arr = [10, 20, 40, 50];
+// arr.splice(2, 0, 30);
+// console.log(arr); // [10, 20, 30, 40, 50]
+// 📌 deleteCount = 0 → nothing removed, only inserted
+
+// 🔁 Replace elements example
+// let arr = [10, 20, 30, 40];
+// arr.splice(1, 2, 99, 100);
+// console.log(arr); // [10, 99, 100, 40]
+// 📌 Removed 20, 30, added 99, 100
 
 const myn2 = myArr.splice(1, 3)
 console.log("C ", myArr);
