@@ -62,9 +62,12 @@ const course = {
 }
 
 // course.courseInstructor
-
+// const {courseInstructor} = course
+// console.log(courseInstructor);
 const {courseInstructor: instructor} = course
-
+// Take courseInstructor from course
+// Store it in a new variable called instructor
+// There is NO variable named courseInstructor anymore in the local scope.
 // console.log(courseInstructor);
 console.log(instructor);
 
